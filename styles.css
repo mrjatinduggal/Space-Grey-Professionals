@@ -28,6 +28,7 @@ img {
   color: var(--primary);
   padding: 0.6rem 1.3rem;
   text-decoration: none;
+  margin: auto;
 }
 hr{
   width: 10%;
@@ -63,7 +64,6 @@ hr{
 .top-container {
   display: grid;
   gap: 20px;
-  justify-content: center;
 
   grid-template-areas:
     "showcase showcase top-box-a"
@@ -71,8 +71,7 @@ hr{
 }
 .showcase {
   align-items: start;
-  background-position: center;
-  background-size: cover;
+  background-size: cover !important; 
   background: url(images/img-1.jpg);
   box-shadow: var(--shadow);
   display: flex;
@@ -162,6 +161,9 @@ footer {
   .info{
     grid-template-columns: repeat(1,1fr);
   }
+  .btn{
+    margin: auto;
+  }
 }
 @media (max-width: 500px) {
   .main-nav ul {
@@ -184,5 +186,8 @@ footer {
     grid-template-columns: repeat(1,1fr);
     display: flex;
     flex-direction: column;
+  }
+  .btn{
+    margin: auto;
   }
 }
